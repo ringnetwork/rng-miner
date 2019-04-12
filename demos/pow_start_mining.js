@@ -1,5 +1,5 @@
-const _pow			= require( 'rng-common/pow.js' );
-const _event_bus		= require( 'rng-common/event_bus.js' );
+const _pow			= require( 'rng-core/pow.js' );
+const _event_bus		= require( 'rng-core/event_bus.js' );
 const _rng_miner	= require( 'rng-miner' );
 
 

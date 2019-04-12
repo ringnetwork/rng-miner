@@ -2,7 +2,7 @@
 
 ## Install
 ```
-$ npm install https://github.com/ringnetwork/rng-common.git#dev -save
+$ npm install https://github.com/ringnetwork/rng-core.git#dev -save
 $ npm install rng-miner -save
 ```
 
