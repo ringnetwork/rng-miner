@@ -14,7 +14,7 @@ const DEFAULT_CALC_TIMES	= 30;
 const DEFAULT_MAX_LOOP		= 100000000;
 const CPU_LIST			= _os.cpus();
 const DEFAULT_WORKER_COUNT	= Array.isArray( CPU_LIST ) ? CPU_LIST.length - 1 : 1;
-const PID_FULL_FILENAME		= `${ _os.tmpdir() }/trustnote-pow-miner.pid`;
+const PID_FULL_FILENAME		= `${ _os.tmpdir() }/rng-miner.pid`;
 
 
 
@@ -469,7 +469,7 @@ class CTrustMinerFactory
 		delete oOptionsCp.bufInputHeader;
 		delete oOptionsCp.maxLoop;
 
-		console.log( `>|< trustnote-pow-miner spawnWorker by master(${ process.pid }) with options : `, oOptionsCp );
+		console.log( `>|< rng-miner spawnWorker by master(${ process.pid }) with options : `, oOptionsCp );
 
 		//	...
 		arrArgs	= [ `${ __dirname }/worker.js`, process.pid, JSON.stringify( oOptionsCp ) ];

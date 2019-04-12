@@ -1,11 +1,11 @@
 {
-  "name": "trustnote-pow-miner-demo",
-  "description": "Demo of TrustNote PoW Miner",
-  "author": "Trustnote",
+  "name": "rng-miner-demo",
+  "description": "Demo of RingNetwork PoW Miner",
+  "author": "RingNetwork",
   "version": "0.1.0",
   "license": "MIT",
   "repository": {
-    "url": "https://github.com/trustnote/trustnote-pow-miner.git",
+    "url": "https://github.com/RingNetwork/rng-miner.git",
     "type": "git"
   },
   "browser": {
@@ -16,7 +16,7 @@
     "bitcore-lib": "^0.13.14",
     "bitcore-mnemonic": "~1.0.0",
     "json-rpc2": "^1.0.2",
-    "trustnote-pow-common": "git+https://github.com/trustnote/trustnote-pow-common.git#dev",
-    "trustnote-pow-miner": ">=1.0.0"
+    "rng-common": "git+https://github.com/RingNetwork/rng-common.git#dev",
+    "rng-miner": ">=1.0.0"
   }
 }

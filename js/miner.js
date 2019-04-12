@@ -12,7 +12,7 @@ const CTrustMinerLibrary	= require( './CTrustMinerLibrary.js' );
  *	@constants
  */
 const CPU_LIST			= _os.cpus();
-const PID_FULL_FILENAME		= `${ _os.tmpdir() }/trustnote-pow-miner.pid`;
+const PID_FULL_FILENAME		= `${ _os.tmpdir() }/rng-miner.pid`;
 
 const MAX_UINT32_VALUE		= 4294967295 - 5;	//	max value of unsigned int(4 bytes)
 const DEFAULT_CALC_TIMES	= 30;			//	default calculate time per loop
@@ -305,7 +305,7 @@ function spawnWorker( oOptions, pfnCallback )
 	delete oOptionsCp.bufInputHeader;
 	delete oOptionsCp.maxLoop;
 
-	console.log( `>|< trustnote-pow-miner spawnWorker by master(${ process.pid }) with options : `, oOptionsCp );
+	console.log( `>|< rng-miner spawnWorker by master(${ process.pid }) with options : `, oOptionsCp );
 
 	//	...
 	sNodeHostPath	= _getNodeHostPath();

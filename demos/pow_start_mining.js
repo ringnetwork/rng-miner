@@ -1,15 +1,15 @@
-const _pow			= require( 'trustnote-pow-common/pow.js' );
-const _event_bus		= require( 'trustnote-pow-common/event_bus.js' );
-const _trustnote_pow_miner	= require( 'trustnote-pow-miner' );
+const _pow			= require( 'rng-common/pow.js' );
+const _event_bus		= require( 'rng-common/event_bus.js' );
+const _rng_miner	= require( 'rng-miner' );
 
 
-let uBits		= _trustnote_pow_miner.getBitsByTarget( "00ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff" );
+let uBits		= _rng_miner.getBitsByTarget( "00ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff" );
 let oMiningInput	= {
 	roundIndex		: 111,
 	firstTrustMEBall	: 'rjywtuZ8A70vgIsZ7L4lBR3gz62Nl3vZr2t7I4lzsMU=',
 	bits			: uBits,
 	publicSeed		: 'public key',
-	superNodeAuthor		: 'xing.supernode.trustnote.org',
+	superNodeAuthor		: 'supernode.ringnetwork.org',
 };
 
 

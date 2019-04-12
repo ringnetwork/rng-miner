@@ -1,9 +1,9 @@
-# Demos for TrustNote Pow-Miner
+# Demos for RingNetwork Pow-Miner
 
 ## Install
 ```
-$ npm install https://github.com/trustnote/trustnote-pow-common.git#dev -save
-$ npm install trustnote-pow-miner -save
+$ npm install https://github.com/ringnetwork/rng-common.git#dev -save
+$ npm install rng-miner -save
 ```
 
 

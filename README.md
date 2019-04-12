@@ -1,20 +1,17 @@
-[![CircleCI](https://img.shields.io/badge/trustnote--pow--miner-build%20passed-green.svg)](https://github.com/trustnote/trustnote-pow-miner)
-[![CircleCI](https://img.shields.io/badge/trustnote--pow--miner-test%20passed-brightgreen.svg)](https://github.com/trustnote/trustnote-pow-miner)
 
 
+## RingNetwork
 
-## TrustNote
+RingNetwork is an open source project that provides reliable and trusted public blockchain network services.            This project is supported by the RingNetwork Foundation.
 
-TrustNote is an open source project that provides reliable and trusted public blockchain network services.            This project is supported by the TrustNote Foundation.
-
-For more information, please visit our official website at [trustnote.org](https://trustnote.org/).
+For more information, please visit our official website at [ringnetwork.org](https://ringnetwork.org/).
 
 <br />
 
 
 ## About
 
-TrustNote PoW-Miner is a free open source `TrustNote` miner for MacOS, Linux and Windows(x64) with multi-cores CPU support. It is written in C++ and has been tested on AMD/Intel CPUs for MacOS, Linux and Windows(x64).
+RingNetwork PoW-Miner is a free open source `RingNetwork` miner for MacOS, Linux and Windows(x64) with multi-cores CPU support. It is written in C++ and has been tested on AMD/Intel CPUs for MacOS, Linux and Windows(x64).
 
 <br />
 
@@ -32,19 +29,19 @@ All supported platforms:
 ## Run
 
 #### Command line edition
-> TrustNote PoW-Miner had been successfully compiled and executed on MacOS, Linux and Windows(x64). <br />
-> But, TrustNote PoW-Miner in command line edition is only for unit testing and is not currently being used in any production environment.
+> RingNetwork PoW-Miner had been successfully compiled and executed on MacOS, Linux and Windows(x64). <br />
+> But, RingNetwork PoW-Miner in command line edition is only for unit testing and is not currently being used in any production environment.
 
 #### Working with Node.js
 
-> TrustNote PoW-Miner can be compiled into both executable binary file and shared object binary file. So, you can not only run the miner as a command line program, but also run it as a Node.js program by calling the export methods in JavaScript.
+> RingNetwork PoW-Miner can be compiled into both executable binary file and shared object binary file. So, you can not only run the miner as a command line program, but also run it as a Node.js program by calling the export methods in JavaScript.
 
 <br />
 
 
 ## Install
 ```
-$ npm install https://github.com/trustnote/trustnote-pow-miner.git
+$ npm install https://github.com/ringnetwork/rng-miner.git
 ```
 <br />
 
@@ -55,7 +52,7 @@ $ npm install https://github.com/trustnote/trustnote-pow-miner.git
 Clone the source code from github
 
 ```
-$ git clone https://github.com/trustnote/trustnote-pow-miner.git
+$ git clone https://github.com/ringnetwork/rng-miner.git
 ```
 
 
@@ -121,7 +118,7 @@ $ mv ./output/miner.Linux.debug.so ../lib/Linux/
 > Microsoft Visual Studio 2017(Community Edition). Please feel free to [Download](https://visualstudio.microsoft.com/vs/) and work with, it's free for our jobs.
 
 1, Open `Visual Studio 2017` > `x64 Native Tools Command Prompt for VS 2017` from `Windows Start` button.    
-2, Change your current working directory to `/trustnote-pow-miner/c/`
+2, Change your current working directory to `/rng-miner/c/`
 
 
 ```bash
@@ -184,7 +181,7 @@ oSolution is a plain object :
 
 
 ```js
-const _miner	= require( 'trustnote-pow-miner' );
+const _miner	= require( 'rng-miner' );
 
 /**
  *	
@@ -243,7 +240,7 @@ stop mining
 
 
 ```js
-const _miner	= require( 'trustnote-pow-miner' );
+const _miner	= require( 'rng-miner' );
 
 _miner.stop();
 console.log( `The KILL signals were sent to all workers.` );
@@ -311,7 +308,7 @@ calculate target in bits with deposit required in the next work
 | uPreviousBits	| Number | target value in 4 bytes bits format of previous cycle
 | uTimeUsed	| Number | actual used time value of previous cycle
 | uTimeStandard	| Number | standard time of a cycle
-| dblDeposit	| Number | amount in Notes calculated by a deposit address of a TrustNote SuperNode
+| dblDeposit	| Number | amount in Notes calculated by a deposit address of a RingNetwork SuperNode
 | uBombExplodingRoundIndex	| Number | round index which bomb start exploding
 | uRoundIndex	| Number | current round index
 | pfnCallback	| function | callback function( err, objResult )

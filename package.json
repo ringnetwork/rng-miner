@@ -1,15 +1,15 @@
 {
-	"name": "trustnote-pow-miner",
+	"name": "rng-miner",
 	"version": "1.0.11",
 	"license": "MIT",
-	"author": "TrustNote",
-	"description": "TrustNote miner for Node.js",
+	"author": "RingNetwork",
+	"description": "RingNetwork miner for Node.js",
 	"keywords": [
-		"trustnote",
+		"RingNetwork",
 		"pow",
 		"miner"
 	],
-	"homepage": "https://github.com/trustnote/trustnote-pow-miner",
+	"homepage": "https://github.com/ringnetwork/rng-miner",
 	"engines": {
 		"node": ">=0.10.0"
 	},
@@ -17,7 +17,7 @@
 	"dependencies": {
 		"async": "^2.6.1",
 		"event-stream": "^3.3.4",
-		"ffi": "git+https://github.com/trustnote/node-ffi.git",
+		"ffi": "git+https://github.com/ringnetwork/node-ffi.git",
 		"ref": "^1.3.5"
 	},
 	"devDependencies": {},
@@ -32,9 +32,9 @@
 	],
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/trustnote/trustnote-pow-miner.git"
+		"url": "https://github.com/ringnetwork/rng-miner.git"
 	},
 	"bugs": {
-		"url": "https://github.com/trustnote/trustnote-pow-miner/issues"
+		"url": "https://github.com/ringnetwork/rng-miner/issues"
 	}
 }

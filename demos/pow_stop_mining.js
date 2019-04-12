@@ -1,4 +1,4 @@
-const _trustnote_pow_miner	= require( 'trustnote-pow-miner' );
+const _rng_miner	= require( 'rng-miner' );
 
 
-_trustnote_pow_miner.stopMining();
+_rng_miner.stopMining();
