@@ -565,7 +565,7 @@ function stop()
 	let nRet	= 0;
 	let nMasterPId	= getMasterPId();
 
-	if ( nMasterPId > 0 )
+	if ( nMasterPId > 0 && nMasterPId != process.pid )
 	{
 		_children( nMasterPId, function( err, arrChildren )
 		{
