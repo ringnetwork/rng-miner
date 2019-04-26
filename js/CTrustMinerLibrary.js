@@ -68,7 +68,7 @@ class CTrustMinerLibrary
 		{
 			return pfnCallback( `call startMining with invalid uBits(${ JSON.stringify( uBits ) }).` );
 		}
-		if ( 'number' !== typeof uNonceStart || uNonceStart <= 0 )
+		if ( 'number' !== typeof uNonceStart || uNonceStart < 0 )
 		{
 			return pfnCallback( `call startMining with invalid uNonceStart(${ JSON.stringify( uNonceStart ) }).` );
 		}
