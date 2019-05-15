@@ -630,7 +630,7 @@ function _getNodeHostPath()
  */
 function _getDefaultMaxWorkerCount()
 {
-	let nRet = 1;
+	let nRet = 0;
 
 	if ( Array.isArray( CPU_LIST ) && CPU_LIST.length > 1 )
 	{
