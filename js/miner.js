@@ -634,6 +634,7 @@ function _getDefaultMaxWorkerCount()
 
 	if ( Array.isArray( CPU_LIST ) && CPU_LIST.length > 1 )
 	{
+		/*
 		if ( CPU_LIST.length < 4 )
 		{
 			//	1 core for main, others for miner
@@ -649,6 +650,8 @@ function _getDefaultMaxWorkerCount()
 			//	4 cores for main, others for miner
 			nRet = CPU_LIST.length - 4;
 		}
+		*/
+		nRet = CPU_LIST.length - 1; //20190516
 	}
 
 	return nRet;
