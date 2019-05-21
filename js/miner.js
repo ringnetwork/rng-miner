@@ -394,7 +394,7 @@ function isResultOfWin( oItem )
 		'string' === typeof oItem.hashHex &&
 		64 === oItem.hashHex.length &&
 		'number' === typeof oItem.nonce &&
-		oItem.nonce > 0;
+		oItem.nonce >= 0;
 }
 
 /**
